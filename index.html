@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lista de Tarea</title>
+</head>
+
+<body>
+    <div class="containerPrincipal">
+        <div class="mensaje"></div>
+        <h1>Lista de tareas</h1>
+        <hr>
+        <form class="formulario">
+
+            <input class="inputTitulo" type="text" placeholder="AGREGAR TITULO" maxlength="10">
+            <textarea name="" class="textDescripcion" placeholder="AGREGAR DESCRIPCION" maxlength="100"></textarea>
+            <input class="inputFecha" type="date" placeholder="AGREGAR FECHA">
+            <button class="btnAgregar">AGREGAR TAREA</button>
+        </form> <br>
+        <div class="containerAgregar">
+            <input type="text" class="inputBuscar" placeholder="BUSCAR TAREA POR TÍTULO">
+            <!--<button class="bntBuscar">BUSCAR</button>-->
+        </div>
+        <div class="containerTarea">
+            <div class="subContainerTarea">
+                <div>Título</div>
+                <div>Descrip.</div>
+                <div>Fecha</div>
+                <div>Editar</div>
+                <div>Eliminar</div>
+                <div>Compl.</div>
+            </div>
+            <ul class="containerLista">
+            
+               
+            </ul>
+        </div>
+     
+    </div>
+ 
+    <script src="app.js"></script>
+</body>
+
+</html>

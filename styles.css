@@ -1,0 +1,210 @@
+
+body {
+    font-family:Monospace, Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.containerPrincipal {
+   width: max-content;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mensaje (puedes usarlo para notificaciones o mensajes de error) */
+.mensaje {
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 900;
+    background-color: #ffdddd;
+    color: #d8000c;
+    border-radius: 5px;
+    
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* Línea de separación */
+hr {
+    border: none;
+    border-top: 2px solid #007bff;
+    margin-bottom: 20px;
+}
+
+/* Estilo para el formulario */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Estilo para los inputs y textarea */
+.inputTitulo,
+.textDescripcion,
+.inputFecha {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+/* Botón para agregar tarea */
+.btnAgregar {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btnAgregar:hover {
+    background-color: #0056b3;
+}
+
+/* Contenedor para la búsqueda de tareas */
+.containerAgregar {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Input de búsqueda */
+.inputBuscar {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    flex-grow: 1;
+}
+
+/* Botón para buscar tarea */
+.bntBuscar {
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+   
+}
+
+.bntBuscar:hover {
+    background-color: #218838;
+}
+
+/* Contenedor de tareas */
+.containerTarea {
+    margin-top: 20px;
+}
+
+/* Subcontenedor para los títulos de las columnas de la lista de tareas */
+.subContainerTarea {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Seis columnas iguales */
+    gap: 20px;
+    font-weight: bold;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+
+/* Lista de tareas */
+.containerLista {
+    margin-top: 10px;
+}
+
+/* Estilo para los elementos de la lista de tareas (cada <li>) */
+ul{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 20px;
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    list-style-type: none;
+}
+
+
+
+/* Estilo para el contenido dentro de cada columna */
+.containerLista li {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 20px;
+    padding: 10px;
+    border-radius: 5px;
+     
+}
+
+.containerLista li .icono {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.containerLista li .icono:hover {
+    color: #007bff;
+}
+img{
+    width: 20px;
+    cursor: pointer;
+}
+.check{
+width: 20px;
+}
+.prueba_visible{
+   
+    text-decoration: line-through;
+    color: grey;
+}
+.descripcion{
+width: 100px;
+overflow: auto;
+}
+ @media(max-width: 740px){
+
+     .containerPrincipal {
+         width: 340px;
+         
+      }
+      .containerTarea {
+        width: max-content;
+        font-size: 9px;
+    }
+    .subContainerTarea {
+        width: max-content;
+      
+    }
+    .containerLista {
+     width: 340px;
+        
+    }
+    img{
+        width: 10px;
+        
+    }
+    .check{
+    width: 10px;
+    }
+    input{
+        width: 340px;
+    }
+   
+ }
